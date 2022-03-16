@@ -3,10 +3,8 @@ WHEN I view the structure of the HTML elements
 THEN I find that the elements follow a logical structure independent of styling and positioning
 WHEN I view the heading attributes
 THEN they fall in sequential order
-xxxxxWHEN I view the title element
-xxxxxTHEN I find a concise, descriptive title -->
 
-<!-- Make a readme -->
+Make a readme -->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -39,14 +37,15 @@ xxxxxTHEN I find a concise, descriptive title -->
                 <!-- semantic: changed from div to image, used src instead of bg, added alt -->
     <img alt="Four people in a business meeting" class="hero" src="assets/images/digital-marketing-meeting.jpg"></img>
     <!-- semantic: changed from div to main -->
-    <main class="content">
+    <main>
+    <section class="content">
             <!-- semantic: changed from div to article -->
             <!-- added id to article, so now the navigation to it works -->
         <article id="search-engine-optimization" class="search-engine-optimization">
             <!-- added alt describing picture -->
             <img alt="Notepad detailing the important components of SEO: Content, Headings, Mobile Compatibility, Social Media, Link Building, and Backlink." src="./assets/images/search-engine-optimization.jpg" class="article-image" />
-            <!-- Added a div as a container -->
-            <div class="article-text-container">
+                    <!-- Added a div as a container to differentiate display value from parent -->    
+                    <div class="article-text-container">
                 <h2>Search Engine Optimization</h2>
                 <p>
                     The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
@@ -57,7 +56,7 @@ xxxxxTHEN I find a concise, descriptive title -->
         <article id="online-reputation-management" class="online-reputation-management">
                         <!-- added alt describing picture -->
             <img alt="Person reviewing graphs that show their reputation going up." src="./assets/images/online-reputation-management.jpg" class="article-image" />
-                    <!-- Added a div as a container -->    
+                    <!-- Added a div as a container to differentiate display value from parent -->    
             <div class="article-text-container">
             <h2>Online Reputation Management</h2>
             <p>
@@ -69,6 +68,8 @@ xxxxxTHEN I find a concise, descriptive title -->
         <article id="social-media-marketing" class="social-media-marketing">
                         <!-- added alt describing picture -->
             <img alt="Social Media Concepts: Share, Like, Tweet, and Media. Also icons such as cloud, mobile device, heart, magnifying glass, etc." src="./assets/images/social-media-marketing.jpg" class="article-image" />
+                                <!-- Added a div as a container to differentiate display value from parent -->    
+
             <div class="article-text-container">
                 <h2>Social Media Marketing</h2>
                 <p>
@@ -76,7 +77,7 @@ xxxxxTHEN I find a concise, descriptive title -->
                 </p>
             </div>
         </article>
-    </main>
+    </section>
                         <!-- semantic: changed from div to aside -->
     <aside class="benefits">
                             <!-- semantic: changed from div to article -->
@@ -107,6 +108,7 @@ xxxxxTHEN I find a concise, descriptive title -->
             </p>
         </article>
     </aside>
+    </main>
     <!-- semantic: changed from div to footer -->
     <footer class="footer">
         <!-- changed from an h2 to an h3 -->
@@ -116,5 +118,4 @@ xxxxxTHEN I find a concise, descriptive title -->
         </p>
     </footer>
 </body>
-
 </html>

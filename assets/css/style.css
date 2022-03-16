@@ -66,16 +66,20 @@ p {
     margin-right: 25px;
 } */
 
+/* added main to enclose section and aside */
+main{
+    display: flex;
+}
 
 /* changed selector to article, changed display to flex */
-main>article {
+section>article {
     display: flex;    
     
 }
 
 /* made the flow reverse for even number articles, so images go on right and text and heading on left */
 
-main>article:nth-child(even){
+section>article:nth-child(even){
     flex-direction: row-reverse;
 }
 
@@ -85,17 +89,18 @@ main>article:nth-child(even){
 
 /* made the margin go on the other side for even number articles */
 
-main>article:nth-child(even)>.article-text-container{
+section>article:nth-child(even)>.article-text-container{
     margin: 0 25px 0 0;
 }
 
 
+/* removed floats */
 
-/*  */
+/* 
 .float-right {
     float: right;
     margin-left: 25px;
-}
+} */
 
 .content {
     width: 75%;
@@ -103,11 +108,15 @@ main>article:nth-child(even)>.article-text-container{
     margin-left: 20px;
 }
 
+aside{
+    margin-left: 20px;
+}
+
 .benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
-    float: right;
+    /* float: right; */
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
