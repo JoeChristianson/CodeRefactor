@@ -13,6 +13,9 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    /* added display flex, and spaced out two elements */
+    display: flex;
+    justify-content: space-between;
 }
 
 header h1 {
@@ -27,7 +30,8 @@ header h1 .seo {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    /* removed float */
+    /* float: right; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -56,11 +60,38 @@ p {
     margin-bottom: 25px;
 }
 
-.float-left {
+/*removed float-left styling  */
+/* .float-left {
     float: left;
     margin-right: 25px;
+} */
+
+
+/* changed selector to article, changed display to flex */
+main>article {
+    display: flex;    
+    
 }
 
+/* made the flow reverse for even number articles, so images go on right and text and heading on left */
+
+main>article:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.article-text-container{
+    margin-left: 25px;
+}
+
+/* made the margin go on the other side for even number articles */
+
+main>article:nth-child(even)>.article-text-container{
+    margin: 0 25px 0 0;
+}
+
+
+
+/*  */
 .float-right {
     float: right;
     margin-left: 25px;
@@ -192,6 +223,6 @@ footer {
     text-align: center;
 }
 
-.footer h2 {
+.footer h3 {
     font-size: 20px;
 }
