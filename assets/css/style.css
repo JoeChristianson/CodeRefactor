@@ -31,7 +31,6 @@ header nav {
     padding-top: 15px;
     margin-right: 20px;
     /* removed float */
-    /* float: right; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -61,20 +60,27 @@ p {
 }
 
 /*removed float-left styling  */
-/* .float-left {
-    float: left;
-    margin-right: 25px;
-} */
 
 /* added main to enclose section and aside */
 main{
     display: flex;
+
 }
 
-/* changed selector to article, changed display to flex */
+section{
+    width: 75%;
+    margin-left: 20px;
+}
+
+/* changed selector to article, changed display to flex, consolidated multiple style blocks */
 section>article {
-    display: flex;    
-    
+    display: flex;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;    
 }
 
 /* made the flow reverse for even number articles, so images go on right and text and heading on left */
@@ -96,18 +102,6 @@ section>article:nth-child(even)>.article-text-container{
 
 /* removed floats */
 
-/* 
-.float-right {
-    float: right;
-    margin-left: 25px;
-} */
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
 aside{
     margin-left: 20px;
 }
@@ -123,104 +117,33 @@ aside{
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* consolidated three articles' styling */
+
+aside article {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* consolidated three h3 selectors into one */
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* consolidated three img selectors into one */
+.benefits img{
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+
+/* consolidated three article images into one block */
+article img {
+    max-height: 200px; 
 }
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }

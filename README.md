@@ -12,6 +12,7 @@ Refactoring a web app for improved accessibility. These changes have been made t
 - eliminating floats by turning parents into flex-boxes with alternating flows on the x-axis
 - changed hero div into img 
 - added a main to enclose the articles from the aside
+- consolidated many selectors in style.css
 
 
 ## Screenshot
